@@ -31,9 +31,9 @@
 	
 	<!-- PHP -->
 	<!--
-	if (preg_match('/\b Firefox \b/x', $_SERVER['HTTP_USER_AGENT']) != 1){
-		echo = "<a href='http://www.mozilla.org/en-US/firefox/new/' class='getff' target='_blank'></a>";
-		}
+	if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox") === false){
+		echo "<a href='http://www.mozilla.org/en-US/firefox/new/' class='getff' target='_blank'></a>";
+	}
 	-->
 		
 
